@@ -21,7 +21,7 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 // Add service for dependency injection
 builder.Services.AddScoped<IProduct, ProductService>();
-//builder.Services.AddScoped<IOrder, OrderService>();
+builder.Services.AddScoped<IOrder, OrderService>();
 
 
 var app = builder.Build();

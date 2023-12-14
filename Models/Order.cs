@@ -4,7 +4,7 @@ namespace E_CommerceStore.Models
 {
     public class Order
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
 
         [ForeignKey("Product")]
         public Guid ProductId { get; set; }
